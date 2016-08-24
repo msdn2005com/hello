@@ -4,6 +4,9 @@ go get -u github.com/karalabe/xgo
 
 mkdir -p $GOPATH/src/github.com/msdn2005com/hello
 git clone https://github.com/msdn2005com/hello.git $GOPATH/src/github.com/msdn2005com/hello
+git add hello.go
+git commit hello.go
+git push
 go install github.com/user/hello
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
